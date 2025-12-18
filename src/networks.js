@@ -61,7 +61,7 @@ module.exports = {
     isZcash: true
   },
   zeroclassic: {
-    messagePrefix: '\x18Zero Signed Message:\n',
+    messagePrefix: '\x18ZeroClassic Signed Message:\n',
     bech32: 'bc',
     bip32: {
       public: 0x0488b21e,
@@ -77,6 +77,25 @@ module.exports = {
       4: 0x7a737763
     },
     coin: coins.ZEC,
+    isZcash: true
+  },
+  zero: {
+    messagePrefix: '\x18Zero Signed Message:\n',
+    bech32: 'bc',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x1cb8,
+    scriptHash: 0x1cbd,
+    wif: 0x80,
+    consensusBranchId: {
+      1: 0x00,
+      2: 0x00,
+      3: 0x6f76727a,
+      4: 0x7361707a
+    },
+    coin: coins.ZER,
     isZcash: true
   }
 }
