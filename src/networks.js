@@ -39,7 +39,7 @@ module.exports = {
       3: 0x5ba81b19,
       4: 0x76b809bb
     },
-    coin: coins.ZEC,
+    coin: coins.BTCZ,
     isZcash: true
   },
   litecoinz: {
@@ -57,7 +57,7 @@ module.exports = {
       3: 0x5ba81b19,
       4: 0x76b809bb
     },
-    coin: coins.ZEC,
+    coin: coins.LTZ,
     isZcash: true
   },
   zeroclassic: {
@@ -76,7 +76,7 @@ module.exports = {
       3: 0x5c7b7d2f,
       4: 0x7a737763
     },
-    coin: coins.ZEC,
+    coin: coins.ZERC,
     isZcash: true
   },
   zero: {
@@ -96,6 +96,24 @@ module.exports = {
       4: 0x7361707a
     },
     coin: coins.ZER,
+    isZcash: true
+  },
+  zclassic: {
+    messagePrefix: '\x18Zclassic Signed Message:\n',
+    bip32: {
+      public: 0x0488b21e,
+      private: 0x0488ade4
+    },
+    pubKeyHash: 0x1cb8,
+    scriptHash: 0x1cbd,
+    wif: 0x80,
+    consensusBranchId: {
+      1: 0x00,
+      2: 0x00,
+      3: 0x5ba81b19,
+      4: 0x930b540d
+    },
+    coin: coins.ZCL,
     isZcash: true
   }
 }

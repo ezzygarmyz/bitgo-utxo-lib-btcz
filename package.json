@@ -1,7 +1,7 @@
 {
   "name": "bitgo-utxo-lib-z",
   "version": "v2.0.0",
-  "description": "Client-side Bitcoin JavaScript library",
+  "description": "Client-side Z-coins JavaScript library",
   "main": "./src/index.js",
   "engines": {
     "node": ">=4.0.0"
