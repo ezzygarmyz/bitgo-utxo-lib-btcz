@@ -40,7 +40,7 @@ module.exports = {
       4: 0x76b809bb
     },
     coin: coins.BTCZ,
-    isZcash: true
+    isBitcoinZ: true
   },
   litecoinz: {
     messagePrefix: '\x18LitecoinZ Signed Message:\n',
@@ -58,7 +58,7 @@ module.exports = {
       4: 0x76b809bb
     },
     coin: coins.LTZ,
-    isZcash: true
+    isLitecoinZ: true
   },
   zeroclassic: {
     messagePrefix: '\x18ZeroClassic Signed Message:\n',
@@ -77,7 +77,7 @@ module.exports = {
       4: 0x7a737763
     },
     coin: coins.ZERC,
-    isZcash: true
+    isZeroClassic: true
   },
   zero: {
     messagePrefix: '\x18Zero Signed Message:\n',
@@ -96,7 +96,7 @@ module.exports = {
       4: 0x7361707a
     },
     coin: coins.ZER,
-    isZcash: true
+    isZero: true
   },
   zclassic: {
     messagePrefix: '\x18Zclassic Signed Message:\n',
@@ -114,6 +114,6 @@ module.exports = {
       4: 0x930b540d
     },
     coin: coins.ZCL,
-    isZcash: true
+    isZclassic: true
   }
 }
