@@ -10,7 +10,15 @@ const coins = {
 };
 
 coins.isZcash = function (network) {
-  return typeforce.value(coins.ZEC)(network.coin);
+  // include all forks that follow Zcash rules
+  return typeforce.value([
+    coins.ZEC,    // Zcash
+    coins.BTCZ,   // BitcoinZ
+    coins.LTZ,    // LitecoinZ
+    coins.ZERC,   // ZeroClassic
+    coins.ZER,    // Zero
+    coins.ZCL     // Zclassic
+  ])(network.coin);
 };
 
 coins.isBitcoinZ = function (network) {
