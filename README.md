@@ -8,13 +8,12 @@
 Originally a fork of [bitcoinjs-lib](https://github.com/BitGo/bitcoinjs-lib); we evolved this library to support the transaction building process of different UTXO based coins.
 
 ## Supported coins
-- Bitcoin
-- Bitcoin Cash
-- Bitcoin Gold
-- Bitcoin SV (Satoshi Vision)
-- Dash
-- Litecoin
-- Zcash (Sapling compatible)
+- Zcash (ZEC)
+- BitcoinZ (BTCZ)
+- LitecoinZ (LTZ)
+- ZeroClassic (ZERC)
+- ZClassic (ZCL)
+- Zero (ZER)
 
 ## Features
 - Clean: Pure JavaScript, concise code, easy to read.
@@ -30,13 +29,13 @@ Originally a fork of [bitcoinjs-lib](https://github.com/BitGo/bitcoinjs-lib); we
 
 ## Installation
 ``` bash
-npm install bitgo-utxo-lib
+npm install bitgo-utxo-lib-z
 ```
 
 ## Setup
 ### Node.js
 ``` javascript
-var bitGoUTXO = require('bitgo-utxo-lib')
+var bitGoUTXO = require('bitgo-utxo-lib-z')
 ```
 
 ### Browser
@@ -47,7 +46,7 @@ These steps are advisory only,  and may not be suitable for your application.
 
 For your project, create an `index.js` file
 ``` javascript
-let bitGoUTXO = require('bitgo-utxo-lib')
+let bitGoUTXO = require('bitgo-utxo-lib-z')
 
 // your code here
 function myFunction () {
@@ -82,12 +81,12 @@ uglifyjs ... --mangle --reserved 'BigInteger,ECPair,Point'
 ### Typescript or VSCode users
 Type declarations for Typescript are available for version `^3.0.0` of the library.
 ``` bash
-npm install @types/bitgo-utxo-lib
+npm install @types/bitgo-utxo-lib-z
 ```
 
-You can now use `bitgo-utxo-lib` as a typescript compliant library.
+You can now use `bitgo-utxo-lib-z` as a typescript compliant library.
 ``` javascript
-import { HDNode, Transaction } from 'bitgo-utxo-lib'
+import { HDNode, Transaction } from 'bitgo-utxo-lib-z'
 ```
 
 For VSCode (and other editors), users are advised to install the type declarations, as Intellisense uses that information to help you code (autocompletion, static analysis).
